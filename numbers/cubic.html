@@ -51,6 +51,9 @@ one digit table and explanation fo 2 digit calculation
          <p>
          <label for="guessField">number in a list <span id="list"></span>: </label>
       </p>
+     <p>
+         <label for="guessField">even number in a list <span id="even"></span>: </label>
+      </p>
     <script type = "text/javascript">
   
       // random value generated
@@ -63,7 +66,14 @@ one digit table and explanation fo 2 digit calculation
       // made for correct Guess
       var guess = 1;
     var arrOfDigits = Array.from(String(cubic), Number);
-   
+        arrOfDigits.reverse();
+    var even =[]
+        for (var i = 0; i < arrOfDigits.length; i++) {
+            if(i % 2 === 0) { // index is even
+            even.push(arrOfDigits[i]);
+            }
+        }
+        
       document.getElementById("submitguess").onclick = function(){
   
         // number guessed by user    
@@ -74,6 +84,8 @@ one digit table and explanation fo 2 digit calculation
            // alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT "+y);
               document.getElementById("y").innerHTML = y;
               document.getElementById("list").innerHTML = arrOfDigits;
+              document.getElementById("even").innerHTML = even;
+              
           }
           else
           {
@@ -82,6 +94,7 @@ one digit table and explanation fo 2 digit calculation
             //  alert("Correct answer is "+y)
               document.getElementById("y").innerHTML = y;
               document.getElementById("list").innerHTML = arrOfDigits;
+              document.getElementById("list").innerHTML = even;
           }
       }
     </script>
