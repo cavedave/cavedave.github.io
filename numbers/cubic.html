@@ -28,7 +28,7 @@
       </p>
   
     <div class="form">
-        <label for="guessField">Enter a guess: </label>
+        <label for="guessField">Enter a guess for <span id="name"></span>: </label>
         <input type = "text" 
                  id = "guessField" 
                class = "guessField">
@@ -42,7 +42,8 @@
   
       // random value generated
       var y = Math.floor(Math.random() * 100 + 1);
-  
+      let number = y;
+    document.getElementById("name").innerHTML = number;
       // counting the number of guesses
       // made for correct Guess
       var guess = 1;
