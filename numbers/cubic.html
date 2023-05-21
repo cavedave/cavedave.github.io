@@ -47,6 +47,8 @@ one digit table and explanation fo 2 digit calculation
   
      <p>
         Heres how that calculation worked
+         <label for="guessField">number was <span id="y"></span>: </label>
+         
       </p>
     <script type = "text/javascript">
   
@@ -55,6 +57,7 @@ one digit table and explanation fo 2 digit calculation
       var cubic=y** 3;
       //let number = y;
     document.getElementById("name").innerHTML = cubic;
+        document.getElementById("y").innerHTML = y;
       // counting the number of guesses
       // made for correct Guess
       var guess = 1;
