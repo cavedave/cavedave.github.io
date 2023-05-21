@@ -57,7 +57,7 @@ one digit table and explanation fo 2 digit calculation
       var cubic=y** 3;
       //let number = y;
     document.getElementById("name").innerHTML = cubic;
-        document.getElementById("y").innerHTML = y;
+        //document.getElementById("y").innerHTML = y;
       // counting the number of guesses
       // made for correct Guess
       var guess = 1;
@@ -70,12 +70,14 @@ one digit table and explanation fo 2 digit calculation
           if(x == y)
           {    
             alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT "+y);
+              document.getElementById("y").innerHTML = y;
           }
           else
           {
             guess++;
             //alert("OOPS SORRY!! The Number Was y")
               alert("Correct answer is "+y)
+              document.getElementById("y").innerHTML = y;
           }
       }
     </script>
