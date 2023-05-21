@@ -48,7 +48,7 @@ one digit table and explanation fo 2 digit calculation
      <p>
         Heres how that calculation worked
          <label for="guessField">number was <span id="y"></span>: </label>
-         
+         <label for="guessField">number in a list <span id="list"></span>: </label>
       </p>
     <script type = "text/javascript">
   
@@ -61,7 +61,8 @@ one digit table and explanation fo 2 digit calculation
       // counting the number of guesses
       // made for correct Guess
       var guess = 1;
-  
+    var arrOfDigits = Array.from(String(y), Number);
+   
       document.getElementById("submitguess").onclick = function(){
   
         // number guessed by user    
@@ -69,15 +70,17 @@ one digit table and explanation fo 2 digit calculation
   
           if(x == y)
           {    
-            alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT "+y);
+           // alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT "+y);
               document.getElementById("y").innerHTML = y;
+              document.getElementById("list").innerHTML = arrOfDigits;
           }
           else
           {
             guess++;
             //alert("OOPS SORRY!! The Number Was y")
-              alert("Correct answer is "+y)
+            //  alert("Correct answer is "+y)
               document.getElementById("y").innerHTML = y;
+              document.getElementById("list").innerHTML = arrOfDigits;
           }
       }
     </script>
