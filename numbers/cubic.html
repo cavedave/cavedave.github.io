@@ -52,7 +52,10 @@ one digit table and explanation fo 2 digit calculation
          <label for="guessField">number in a list <span id="list"></span>: </label>
       </p>
      <p>
-         <label for="guessField">even number in a list 10 <span id="even2"></span>: </label>
+         <label for="guessField">even number in a list 12 <span id="even2"></span>: </label>
+      </p>
+         <p>
+         <label for="guessField">sum is <span id="sumEven"></span>: </label>
       </p>
     <script type = "text/javascript">
   
@@ -67,12 +70,16 @@ one digit table and explanation fo 2 digit calculation
       var guess = 1;
       var arrOfDigits = Array.from(String(cubic), Number);
       arrOfDigits.reverse();
+      var sumEven = 0;
     var even2 =[]
         for (var i = 0; i < arrOfDigits.length; i++) {
             if(i % 2 === 0) { // index is even
             even2.push(arrOfDigits[i]);
+                sumEven = sumEven + arrOfDigits[i];
             }
         }
+        
+        
         console.log(even2)
       document.getElementById("submitguess").onclick = function(){
   
@@ -85,6 +92,7 @@ one digit table and explanation fo 2 digit calculation
               document.getElementById("y").innerHTML = y;
               document.getElementById("list").innerHTML = arrOfDigits;
               document.getElementById("even2").innerHTML = even2;
+              document.getElementById("sumEven").innerHTML = sumEven;
               console.log(even2);
           }
           else
@@ -95,7 +103,7 @@ one digit table and explanation fo 2 digit calculation
               document.getElementById("y").innerHTML = y;
               document.getElementById("list").innerHTML = arrOfDigits;
               document.getElementById("even2").innerHTML = even2;
-            //  document.getElementById("list").innerHTML = even;
+              document.getElementById("sumEven").innerHTML = sumEven;
           }
       }
     </script>
