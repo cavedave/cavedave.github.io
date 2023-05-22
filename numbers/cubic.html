@@ -67,6 +67,10 @@ one digit table and explanation fo 2 digit calculation
              <p>
          <label for="guessField">difference <span id="difference"></span>: </label>
       </p>
+    <p>
+         <label for="guessField">end is <span id="end"></span>: </label>
+      </p>
+    
     <script type = "text/javascript">
   
       // random value generated
@@ -80,6 +84,13 @@ one digit table and explanation fo 2 digit calculation
       // made for correct Guess
       var guess = 1;
       var arrOfDigits = Array.from(String(cubic), Number);
+        
+        //get the first and last numbers
+        var end = arrOfDigits.slice(-1)
+        var start = arrOfDigits.slice(2)
+        
+        
+        
       arrOfDigits.reverse();
       var sumEven = 0;
         var sumOdd = 0;
@@ -117,6 +128,8 @@ one digit table and explanation fo 2 digit calculation
               document.getElementById("odd").innerHTML = odd;
               document.getElementById("sumOdd").innerHTML = sumOdd;
               document.getElementById("difference").innerHTML = difference;
+              document.getElementById("end").innerHTML = end;
+             
               console.log(even2);
           }
           else
@@ -132,7 +145,7 @@ one digit table and explanation fo 2 digit calculation
               document.getElementById("odd").innerHTML = odd;
               document.getElementById("sumOdd").innerHTML = sumOdd;
               document.getElementById("difference").innerHTML = difference;
-              
+              document.getElementById("end").innerHTML = end;
           }
       }
     </script>
