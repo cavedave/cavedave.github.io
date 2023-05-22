@@ -52,10 +52,17 @@ one digit table and explanation fo 2 digit calculation
          <label for="guessField">number in a list <span id="list"></span>: </label>
       </p>
      <p>
-         <label for="guessField">even number in a list 12 <span id="even2"></span>: </label>
+         <label for="guessField">even number in a list 13 <span id="even2"></span>: </label>
       </p>
          <p>
          <label for="guessField">sum is <span id="sumEven"></span>: </label>
+      </p>
+    
+         <p>
+         <label for="guessField">odd number in a list <span id="odd"></span>: </label>
+      </p>
+         <p>
+         <label for="guessField">sum is <span id="sumOdd"></span>: </label>
       </p>
     <script type = "text/javascript">
   
@@ -71,11 +78,17 @@ one digit table and explanation fo 2 digit calculation
       var arrOfDigits = Array.from(String(cubic), Number);
       arrOfDigits.reverse();
       var sumEven = 0;
+        var sumOdd = 0;
     var even2 =[]
+    var odd =[]
         for (var i = 0; i < arrOfDigits.length; i++) {
             if(i % 2 === 0) { // index is even
             even2.push(arrOfDigits[i]);
                 sumEven = sumEven + arrOfDigits[i];
+            }
+            else{
+               odd.push(arrOfDigits[i]);
+                sumOdd = sumOdd + arrOfDigits[i];
             }
         }
         
@@ -93,6 +106,9 @@ one digit table and explanation fo 2 digit calculation
               document.getElementById("list").innerHTML = arrOfDigits;
               document.getElementById("even2").innerHTML = even2;
               document.getElementById("sumEven").innerHTML = sumEven;
+              
+              document.getElementById("odd").innerHTML = odd;
+              document.getElementById("sumOdd").innerHTML = sumOdd;
               console.log(even2);
           }
           else
@@ -104,6 +120,9 @@ one digit table and explanation fo 2 digit calculation
               document.getElementById("list").innerHTML = arrOfDigits;
               document.getElementById("even2").innerHTML = even2;
               document.getElementById("sumEven").innerHTML = sumEven;
+              
+              document.getElementById("odd").innerHTML = odd;
+              document.getElementById("sumOdd").innerHTML = sumOdd;
           }
       }
     </script>
