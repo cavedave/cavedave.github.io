@@ -64,6 +64,9 @@ one digit table and explanation fo 2 digit calculation
          <p>
          <label for="guessField">sum is <span id="sumOdd"></span>: </label>
       </p>
+             <p>
+         <label for="guessField">difference <span id="difference"></span>: </label>
+      </p>
     <script type = "text/javascript">
   
       // random value generated
@@ -91,7 +94,10 @@ one digit table and explanation fo 2 digit calculation
                 sumOdd = sumOdd + arrOfDigits[i];
             }
         }
-        
+        var difference=sumOdd-sumEven;
+        if (difference<0){
+            difference = difference+11;
+        }
         
         console.log(even2)
       document.getElementById("submitguess").onclick = function(){
@@ -109,6 +115,7 @@ one digit table and explanation fo 2 digit calculation
               
               document.getElementById("odd").innerHTML = odd;
               document.getElementById("sumOdd").innerHTML = sumOdd;
+              document.getElementById("difference").innerHTML = difference;
               console.log(even2);
           }
           else
@@ -123,6 +130,8 @@ one digit table and explanation fo 2 digit calculation
               
               document.getElementById("odd").innerHTML = odd;
               document.getElementById("sumOdd").innerHTML = sumOdd;
+              document.getElementById("difference").innerHTML = difference;
+              
           }
       }
     </script>
