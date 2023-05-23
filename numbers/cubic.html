@@ -52,7 +52,7 @@ one digit table and explanation fo 2 digit calculation
          <label for="guessField">number in a list <span id="list"></span>: </label>
       </p>
      <p>
-         <label for="guessField">even number in a list 14 <span id="even2"></span>: </label>
+         <label for="guessField">even number in a list 15 <span id="even2"></span>: </label>
       </p>
          <p>
          <label for="guessField">sum is <span id="sumEven"></span>: </label>
@@ -88,6 +88,21 @@ one digit table and explanation fo 2 digit calculation
         //get the first and last numbers
         var end = arrOfDigits.slice(-1)
         var start = arrOfDigits.slice(2)
+        
+        //var simplehash = new Object();
+// or
+// var simplehash = {};
+
+magichash[1] = 1;
+magichash[2] = 2;
+magichash[3] = 3;
+
+for (var key in magichash) {
+  // use hasOwnProperty() to filter out properties from Object.prototype
+  if (simplehash.hasOwnProperty(key)) {
+    console.log('key is: ' + key + ', value is: ' + simplehash[key]);
+  }
+}
         
         
         
