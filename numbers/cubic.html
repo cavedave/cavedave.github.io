@@ -20,7 +20,7 @@
 </head>
   
 <body>
-    <h1>Get the 3rd Root 19</h1>
+    <h1>Get the 3rd Root 21</h1>
     <h2>First get 3rd root of 3 digit numbers</h2>
         <p>
 For 3 digit numbers it has to be one of these. and you have to learn the table. You will also use it for the other calculations later
@@ -31,8 +31,8 @@ For 3 digit numbers it has to be one of these. and you have to learn the table. 
     <th>Cube</th>
   </tr>
   <tr>
-    <th>1</th>
-    <th>1</th>
+    <td>1</td>
+    <td>1</td>
   </tr>
   <tr>
     <td>2</td>
@@ -184,17 +184,20 @@ const magic = [1,7,9,5,3,8,6,2,4,10];
                 sumOdd = sumOdd + arrOfDigits[i];
             }
         }
+        console.log("difference");
+        console.log(difference)
         var difference=sumOdd-sumEven;
         if (difference<0){
             difference = difference+11;
         }
-        
+        console.log("even");
         console.log(even2)
       document.getElementById("submitguess").onclick = function(){
   
         // number guessed by user    
           var x = document.getElementById("guessField").value;
-  
+          console.log("x is");
+  console.log(x);
           if(x == y)
           {    
            // alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT "+y);
@@ -214,7 +217,8 @@ const magic = [1,7,9,5,3,8,6,2,4,10];
           {
             guess++;
             //alert("OOPS SORRY!! The Number Was y")
-            //  alert("Correct answer is "+y)
+              console.log(y);
+              //alert("Correct answer is "+y)
               document.getElementById("y").innerHTML = y;
               document.getElementById("list").innerHTML = arrOfDigits;
               document.getElementById("even2").innerHTML = even2;
