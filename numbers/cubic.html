@@ -20,7 +20,7 @@
 </head>
   
 <body>
-    <h1>Get the 3rd Root 26</h1>
+    <h1>Get the 3rd Root 27</h1>
     <h2>First get 3rd root of 3 digit numbers</h2>
         <p>
 For 3 digit numbers it has to be one of these. and you have to learn the table. You will also use it for the other calculations later
@@ -246,6 +246,19 @@ const thecube = [1,8,27,64,125,216,343,512,729,1000];
         console.log(digit.indexOf(end)+1);
         var smallest=digit.indexOf(end)+1;
         //end = ;
+        //biggest is the number just under the 7,8,9 numbers
+        if(arrOfDigits.length ==7){
+             console.log("big seven");
+             console.log(arrOfDigits[7]);
+        }
+        if(arrOfDigits.length ==8){
+             console.log("big eight ");
+             console.log(arrOfDigits[8]);
+        }
+        if(arrOfDigits.length ==9){
+            console.log("big nine");
+            console.log(arrOfDigits[9]);
+        }
         
       arrOfDigits.reverse();
       var sumEven = 0;
