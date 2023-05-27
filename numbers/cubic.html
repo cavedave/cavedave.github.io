@@ -234,6 +234,7 @@ const digit = [1,8,7,4,5,6,3,2,9,0];
 const thecube = [1,8,27,64,125,216,343,512,729,1000];
         //find the digit that matches the smallest value
         console.log("location");
+        console.log(end);
         console.log(digit.indexOf(end));
         //end = ;
         
@@ -253,11 +254,12 @@ const thecube = [1,8,27,64,125,216,343,512,729,1000];
             }
         }
         console.log("difference");
-        console.log(difference)
+        
         var difference=sumOdd-sumEven;
         if (difference<0){
             difference = difference+11;
         }
+        console.log(difference)
         console.log("even");
         console.log(even2)
       document.getElementById("submitguess").onclick = function(){
