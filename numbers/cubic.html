@@ -20,7 +20,7 @@
 </head>
   
 <body>
-    <h1>Get the 3rd Root 27</h1>
+    <h1>Get the 3rd Root 28</h1>
     <h2>First get 3rd root of 3 digit numbers</h2>
         <p>
 For 3 digit numbers it has to be one of these. and you have to learn the table. You will also use it for the other calculations later
@@ -186,9 +186,25 @@ one digit table and explanation fo 2 digit calculation
         <p>
          <label for="guessField">smallest is <span id="smallest"></span>: </label>
         
-        smallest
+      
       </p>
     
+            <p>
+         <label for="guessField">biggest is <span id="biggest"></span>: </label>
+        
+       
+      </p>
+       <p>
+         <label for="guessField">smallest lus biggest is <span id="biggest"></span>: </label>
+        
+       
+      </p>
+    
+           <p>
+         <label for="guessField">combined minus magic number is. <span id="biggest"></span>: </label>
+        And take into account negatives makes the middle number
+       
+      </p>
     odd bigger
     even bigger then
     
@@ -249,15 +265,15 @@ const thecube = [1,8,27,64,125,216,343,512,729,1000];
         //biggest is the number just under the 7,8,9 numbers
         if(arrOfDigits.length ==7){
              console.log("big seven");
-             console.log(arrOfDigits[7]);
+             console.log(arrOfDigits[6]);
         }
         if(arrOfDigits.length ==8){
              console.log("big eight ");
-             console.log(arrOfDigits[8]);
+             console.log(arrOfDigits[7]);
         }
         if(arrOfDigits.length ==9){
             console.log("big nine");
-            console.log(arrOfDigits[9]);
+            console.log(arrOfDigits[8]);
         }
         
       arrOfDigits.reverse();
@@ -293,6 +309,7 @@ const thecube = [1,8,27,64,125,216,343,512,729,1000];
           if(x == y)
           {    
            // alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT "+y);
+              document.getElementById("biggest").innerHTML = biggest;
               document.getElementById("smallest").innerHTML = smallest;
               document.getElementById("y").innerHTML = y;
               document.getElementById("list").innerHTML = arrOfDigits;
