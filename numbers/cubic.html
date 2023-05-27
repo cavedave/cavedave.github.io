@@ -20,7 +20,7 @@
 </head>
   
 <body>
-    <h1>Get the 3rd Root 24</h1>
+    <h1>Get the 3rd Root 25</h1>
     <h2>First get 3rd root of 3 digit numbers</h2>
         <p>
 For 3 digit numbers it has to be one of these. and you have to learn the table. You will also use it for the other calculations later
@@ -180,7 +180,15 @@ one digit table and explanation fo 2 digit calculation
       </p>
     <p>
          <label for="guessField">end is <span id="end"></span>: </label>
+        
+        
       </p>
+        <p>
+         <label for="guessField">smallest is <span id="smallest"></span>: </label>
+        
+        smallest
+      </p>
+    
     odd bigger
     even bigger then
     
@@ -235,7 +243,8 @@ const thecube = [1,8,27,64,125,216,343,512,729,1000];
         //find the digit that matches the smallest value
         console.log("location");
         console.log(end);
-        console.log(digit.indexOf(end));
+        console.log(digit.indexOf(end)+1);
+        var smallest=digit.indexOf(end)+1;
         //end = ;
         
       arrOfDigits.reverse();
@@ -271,6 +280,7 @@ const thecube = [1,8,27,64,125,216,343,512,729,1000];
           if(x == y)
           {    
            // alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT "+y);
+              document.getElementById("smallest").innerHTML = smallest;
               document.getElementById("y").innerHTML = y;
               document.getElementById("list").innerHTML = arrOfDigits;
               document.getElementById("even2").innerHTML = even2;
