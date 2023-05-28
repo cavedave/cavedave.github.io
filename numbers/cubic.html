@@ -20,7 +20,7 @@
 </head>
   
 <body>
-    <h1>Get the 3rd Root 36</h1>
+    <h1>Get the 3rd Root 37</h1>
     <h2>First get 3rd root of 3 digit numbers</h2>
         <p>
 For 3 digit numbers it has to be one of these. and you have to learn the table. You will also use it for the other calculations later
@@ -274,20 +274,42 @@ const thecube = [1,8,27,64,125,216,343,512,729,1000];
               //console.log("a item part ");
                     //console.log(j);
                     //console.log(item);
-              for (var item in thecube) {
-                  //console.log("c item part ");
-                  //console.log(item);
-                    if (j<= item) {
-                   console.log("b item part ");
-                    console.log(j);
-                        console.log("actual item ");
-                    console.log(item);
-                        //get this big number
-                        //add it to small one
-                        //
-                break;
-                   }
-  }
+            
+             [1,8,27,64,125,216,343,512,729,1000];
+            switch (j) {
+  case j>729:
+    biggest = 9;
+    break;
+  case j>512:
+    biggest = 8;
+    break;
+  case j>343:
+     biggest = 7;
+    break;
+  case j>216:
+    biggest = 6;
+    break;
+  case j>125:
+    biggest = 5;
+    break;
+  case j>64:
+    biggest = 4;
+    break;
+  case j>27:
+    biggest = 3;
+    break;
+  case j>8:
+    biggest = 2;
+    break;
+ case j>0:
+    biggest = 1;
+    
+}
+                            console.log(j);
+                        console.log("biggest ");
+            console.log(biggest);
+         
+  
             
              console.log(arrOfDigits[0]);
             console.log(arrOfDigits[1]);
