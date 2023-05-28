@@ -20,7 +20,7 @@
 </head>
   
 <body>
-    <h1>Get the 3rd Root 39</h1>
+    <h1>Get the 3rd Root 40</h1>
     <h2>First get 3rd root of 3 digit numbers</h2>
         <p>
 For 3 digit numbers it has to be one of these. and you have to learn the table. You will also use it for the other calculations later
@@ -266,12 +266,34 @@ const thecube = [1,8,27,64,125,216,343,512,729,1000];
         if(arrOfDigits.length ==7){
              console.log("big seven");
              console.log(arrOfDigits[0]);
+            var j = '' + arrOfDigits[0];
+            j = parseInt(j);
         }
         if(arrOfDigits.length ==8){
              console.log("big eight ");
             var j = '' + arrOfDigits[0] + arrOfDigits[1];
             j = parseInt(j);
-              //console.log("a item part ");
+
+                            console.log(j);
+                        console.log("biggest should be 4");
+            console.log(biggest);
+         
+  
+            
+             console.log(arrOfDigits[0]);
+            console.log(arrOfDigits[1]);
+            
+        }
+        if(arrOfDigits.length ==9){
+            console.log("big nine");
+            var j = '' + arrOfDigits[0] + arrOfDigits[1]+arrOfDigits[2];
+            j = parseInt(j);
+            console.log(arrOfDigits[0]);
+            console.log(arrOfDigits[1]);
+            console.log(arrOfDigits[2]);
+        }
+        
+                      //console.log("a item part ");
                     //console.log(j);
                     //console.log(item);
             var biggest =0;
@@ -312,22 +334,6 @@ const thecube = [1,8,27,64,125,216,343,512,729,1000];
   }
   }
   }
-                            console.log(j);
-                        console.log("biggest should be 4");
-            console.log(biggest);
-         
-  
-            
-             console.log(arrOfDigits[0]);
-            console.log(arrOfDigits[1]);
-            
-        }
-        if(arrOfDigits.length ==9){
-            console.log("big nine");
-            console.log(arrOfDigits[0]);
-            console.log(arrOfDigits[1]);
-            console.log(arrOfDigits[2]);
-        }
         
       arrOfDigits.reverse();
       var sumEven = 0;
