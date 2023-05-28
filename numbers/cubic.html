@@ -20,7 +20,7 @@
 </head>
   
 <body>
-    <h1>Get the 3rd Root 38</h1>
+    <h1>Get the 3rd Root 39</h1>
     <h2>First get 3rd root of 3 digit numbers</h2>
         <p>
 For 3 digit numbers it has to be one of these. and you have to learn the table. You will also use it for the other calculations later
@@ -277,36 +277,41 @@ const thecube = [1,8,27,64,125,216,343,512,729,1000];
             var biggest =0;
 
             switch (j) {
-  case j>729:
+  if(j>729){
     biggest = 9;
-    break;
-  case j>512:
+  } else{
+    if(j>512){
     biggest = 8;
-    break;
-  case j>343:
-     biggest = 7;
-    break;
-  case j>216:
+  } else{   
+        if(j>343){
+    biggest = 7;
+  } else{  
+        if(j>216){
     biggest = 6;
-    break;
-  case j>125:
+  } else{  
+     if(j>125){
     biggest = 5;
-    break;
-  case j>64:
+  } else{ 
+      if(j>64){
     biggest = 4;
-    break;
-  case j>27:
+  } else{ 
+      if(j>27){
     biggest = 3;
-    break;
-  case j>8:
+  } else{  
+         if(j>8){
     biggest = 2;
-    break;
- case j>1:
+  } else{    
+         if(j>1){
     biggest = 1;
-     break;
- case j>0:
-    biggest = 0;   
-}
+  } 
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
                             console.log(j);
                         console.log("biggest should be 4");
             console.log(biggest);
