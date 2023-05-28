@@ -20,7 +20,7 @@
 </head>
   
 <body>
-    <h1>Get the 3rd Root 41</h1>
+    <h1>Get the 3rd Root 42</h1>
     <h2>First get 3rd root of 3 digit numbers</h2>
         <p>
 For 3 digit numbers it has to be one of these. and you have to learn the table. You will also use it for the other calculations later
@@ -164,10 +164,10 @@ one digit table and explanation fo 2 digit calculation
          <label for="guessField">sum of the even is <span id="sumEven"></span>: </label>
       </p>
       <p>
-         <label for="guessField">Number for the digit bit. look up the final number and where it matches in the first table <span id="sumEven"></span>: </label>
+         <label for="guessField">Number for the digit bit. look up the final number and where it matches in the first table <span id="smallest"></span>: </label>
       </p>
           <p>
-         <label for="guessField">Number for the hundreds figure. Look up firt table and the one lower than the 7,8,9 number is the one we want <span id="sumEven"></span>: </label>
+         <label for="guessField">Number for the hundreds figure. Look up first table and the one lower than the 7,8,9 number is the one we want <span id="biggest"></span>: </label>
       </p>
          <p>
          <label for="guessField">odd number in a list <span id="odd"></span>: </label>
@@ -379,7 +379,8 @@ const thecube = [1,8,27,64,125,216,343,512,729,1000];
               document.getElementById("sumOdd").innerHTML = sumOdd;
               document.getElementById("difference").innerHTML = difference;
               document.getElementById("end").innerHTML = end;
-             
+                document.getElementById("biggest").innerHTML = biggest;
+              document.getElementById("smallest").innerHTML = smallest;           
               console.log(even2);
           }
           else
@@ -398,6 +399,8 @@ const thecube = [1,8,27,64,125,216,343,512,729,1000];
               document.getElementById("sumOdd").innerHTML = sumOdd;
               document.getElementById("difference").innerHTML = difference;
               document.getElementById("end").innerHTML = end;
+                              document.getElementById("biggest").innerHTML = biggest;
+              document.getElementById("smallest").innerHTML = smallest; 
           }
       }
     </script>
