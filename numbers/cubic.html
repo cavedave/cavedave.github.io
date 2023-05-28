@@ -20,7 +20,7 @@
 </head>
   
 <body>
-    <h1>Get the 3rd Root 42</h1>
+    <h1>Get the 3rd Root 43</h1>
     <h2>First get 3rd root of 3 digit numbers</h2>
         <p>
 For 3 digit numbers it has to be one of these. and you have to learn the table. You will also use it for the other calculations later
@@ -183,19 +183,8 @@ one digit table and explanation fo 2 digit calculation
         
         
       </p>
-        <p>
-         <label for="guessField">smallest is <span id="smallest"></span>: </label>
-        
-      
-      </p>
-    
-            <p>
-         <label for="guessField">biggest is <span id="biggest"></span>: </label>
-        
-       
-      </p>
        <p>
-         <label for="guessField">smallest lus biggest is <span id="biggest"></span>: </label>
+         <label for="guessField">smallest plus biggest is <span id="comb"></span>: </label>
         
        
       </p>
@@ -333,6 +322,9 @@ const thecube = [1,8,27,64,125,216,343,512,729,1000];
   }
   }
   }
+        var comb = smallest+biggest;
+        
+        
          console.log("biggest should be 4");
             console.log(biggest);
       arrOfDigits.reverse();
@@ -380,7 +372,9 @@ const thecube = [1,8,27,64,125,216,343,512,729,1000];
               document.getElementById("difference").innerHTML = difference;
               document.getElementById("end").innerHTML = end;
                 document.getElementById("biggest").innerHTML = biggest;
-              document.getElementById("smallest").innerHTML = smallest;           
+              document.getElementById("smallest").innerHTML = smallest; 
+              document.getElementById("comb").innerHTML = comb; 
+              
               console.log(even2);
           }
           else
@@ -401,6 +395,7 @@ const thecube = [1,8,27,64,125,216,343,512,729,1000];
               document.getElementById("end").innerHTML = end;
                               document.getElementById("biggest").innerHTML = biggest;
               document.getElementById("smallest").innerHTML = smallest; 
+              document.getElementById("comb").innerHTML = comb; 
           }
       }
     </script>
